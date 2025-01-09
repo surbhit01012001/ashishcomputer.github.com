@@ -22,15 +22,15 @@
         }
 
         table {
-            width: 100%;
+            width: 60%;
             border-collapse: collapse;
             margin: 0 auto;
         }
 
         th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #ddd;
+            padding: 1px;
+            text-align: center;
+            border: 0.5px solid #ddd;
         }
 
         th {
@@ -52,11 +52,11 @@
 
         a {
             text-decoration: none;
-            padding: 5px 10px;
+            padding: 2px 5px;
             background-color: #ff4d4d;
             color: white;
-            border-radius: 5px;
-            margin-right: 5px;
+            border-radius: 2px;
+            margin-right: 2px;
         }
 
         a:hover {
@@ -77,7 +77,7 @@
     </style>
 </head>
 <body>
- <jsp:include page="/nav_admin.jsp" />
+    <jsp:include page="/nav_admin.jsp" />
     <h1>Student Registration Details</h1>
 
     <table>
@@ -126,16 +126,17 @@
                 <td><%= student.getQualification() %></td>
                 <td><%= student.getCourse() %></td>
                 <td class="actions">
-                    <a href="delete?email=<%= student.getEmail() %>">DELETE</a>
-                    <a href="updateStudent?email=<%= student.getEmail() %>">UPDATE</a>
+                    <a href="delete?roll_number=<%= student.getRollNumber() %>">DELETE</a>
+                    <a href="update?roll_number=<%= student.getRollNumber() %>">UPDATE</a>
                 </td>
             </tr>
         <%
                 }
+                
             } else {
         %>
             <tr>
-                <td colspan="17" class="no-data">No data available</td>
+                <td colspan="17" class="no-data">No student data available.</td>
             </tr>
         <%
             }

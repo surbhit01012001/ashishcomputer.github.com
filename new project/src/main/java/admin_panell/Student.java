@@ -17,6 +17,7 @@ public class Student {
     private String lastSchool;
     private String qualification;
     private String course;
+    
 	public int getId() {
 		return id;
 	}

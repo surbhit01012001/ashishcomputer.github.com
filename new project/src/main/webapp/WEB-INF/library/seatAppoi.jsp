@@ -79,9 +79,8 @@ button.btn:hover {
 	
 </style>
 <body>
-
+	
     <div class="container">
-    
         <h1>Library Seat Appointment</h1>
         <form action="setAppoint" method="POST">
             <div class="form-group">

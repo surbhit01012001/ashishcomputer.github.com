@@ -89,7 +89,7 @@ public class student_reg extends HttpServlet {
                                 }
 
                                 // Step 4: Send response to the user
-                                response.getWriter().println("Registration successful! Your roll number will be: ACI339514101" + String.format("%05d", generatedId));
+                                request.getRequestDispatcher("/WEB-INF/students/student_Registration.jsp").forward(request, response);
                             }
                         }
                     } else {

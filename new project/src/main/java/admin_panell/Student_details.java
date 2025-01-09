@@ -28,6 +28,7 @@ public class Student_details extends HttpServlet {
         List<Student> students = new ArrayList<>();
 
         try {
+        	
             // Load MySQL JDBC driver
             Class.forName("com.mysql.cj.jdbc.Driver");
 
@@ -74,6 +75,7 @@ public class Student_details extends HttpServlet {
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Implement POST logic if needed
+        
+    	
     }
 }

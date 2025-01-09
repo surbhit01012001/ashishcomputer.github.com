@@ -103,8 +103,9 @@ body {
 		      <p><strong>Duration:</strong> 12 months</p>
 		      <ul>
 		        <li>MS-OFFICE 2019</li>
-		        <li>TALLY PRIME + GST</li>
-		        <li>GRAPHIC DESIGNING</li>
+		        <li>DTP</li>
+		        <li>INTERNET</li>
+		        <LI>MANY TOPIC THIS CHAPATER</LI>
 		      </ul>
 		      <button>Read more</button>
     </div>

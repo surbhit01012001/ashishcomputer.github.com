@@ -95,7 +95,7 @@ body {
 	<jsp:include page="/navfile.jsp" />
  <h2>SHORT TERM COURSE</h2>
 	
-<!-- Example of additional sections for these links -->
+
 	<div class="course-container">
 		    <div class="course-card">
 		      <div class="course-header">CCC</div>

@@ -127,6 +127,7 @@ nav a:hover {
             <a href="<%=request.getContextPath()%>/course/shortcourse.jsp"> SHORT TERM COURSE</a>
             <a href="<%=request.getContextPath()%>/course/tally.jsp"> TALLY</a>
             <a href="<%=request.getContextPath()%>/course/programming.jsp"> PROGRAMMING</a>
+               <a href="<%=request.getContextPath()%>/course/ALL CERTIFICATION COURSE.jsp"> ALL COURSE PDF</a>
         </div>
     </div>
     <div class="dropdown">
@@ -145,7 +146,8 @@ nav a:hover {
         <button class="dropbtn">Login</button>
         <div class="dropdown-content">
             <a href="<%=request.getContextPath()%>/admin_lo">ADMIN LOGIN</a>
-            <a href="#center_login">CENTER LOGIN</a>
+            <a href="<%=request.getContextPath()%>/admin_lo">CENTER LOGIN</a>
+            
             <a href="#employee">EMPLOYEE LOGIN</a>
         </div>
     </div>

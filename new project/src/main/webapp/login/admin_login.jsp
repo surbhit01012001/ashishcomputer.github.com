@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <title>Admin Login</title>
     <style>
-        body {
+        /* पूरी स्क्रीन को केंद्र में लाने के लिए */
+        .div {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
+            margin-left: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+             
         }
         .login-container {
             background-color: #fff;
@@ -54,14 +56,15 @@
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Admin Login</h1>
-        <form action="admin_lo" method="POST">
-            <input type="text" name="email" placeholder=" Enter Your Email Id" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
-        
-    </div>
+<jsp:include page="/navfile.jsp" />
+
+<div class="login-container">
+    <h1>Admin Login</h1>
+    <form action="admin_lo" method="POST">
+        <input type="text" name="email" placeholder="Enter Your Email Id" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+</div>
 </body>
 </html>

@@ -162,6 +162,11 @@ span {
             <button type="submit" class="submit-button">Register Now</button>
               </div>
         </form>
+        <c:if test="${not empty resultMessage}">
+        <div style="color: green;">
+            ${resultMessage}
+        </div>
+    </c:if>
   
 </body>
 </html>

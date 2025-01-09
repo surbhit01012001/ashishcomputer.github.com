@@ -56,6 +56,9 @@ public class seatAppoint extends HttpServlet {
         } catch (Exception e) {
             e.printStackTrace();
             response.getWriter().println("Error: " + e.getMessage());  
+         } finally {
+            // Forwarding to home.jsp with the result message
+            request.getRequestDispatcher("home.jsp").forward(request, response);
         }
     }
 }

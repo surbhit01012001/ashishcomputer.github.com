@@ -23,7 +23,7 @@
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%; /* Ensure the section takes up full width */
-    height: 100vh; /* Full viewport height */
+    height: 80vh; /* Full viewport height */
     overflow: hidden; /* Prevent overflow */
 }
 
@@ -43,9 +43,9 @@
     position: absolute;
     top: 0;
     left: 0;
-    animation: slide 15s infinite; /* Animates images */
+    animation: slide 120s infinite; /* Animates images */
     opacity: 0; /* Hide images initially */
-    transition: opacity 1s ease-in-out;
+    transition: opacity 50s ease-in-out;
 }
 
 /* Keyframes for sliding effect */
@@ -62,7 +62,7 @@
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for perfect center */
-    color: #333; /* Text color */
+    color: red; /* Text color changed to red */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
     z-index: 2; /* Ensure the text is above the images */
 }
@@ -102,9 +102,10 @@
    
     <section id="home" class="hero">
         <div class="banner-container">
-            <img src="<%= request.getContextPath() %>/image/class_iage_1.jpg" alt="Banner" class="banner-image">
-            <img src="<%= request.getContextPath() %>/image/class_image_2.jpg.jpg" alt="Banner" class="banner-image">
-            <img src="<%= request.getContextPath() %>/image/background banner (2).jpg" alt="Banner" class="banner-image">
+            <img src="<%= request.getContextPath() %>/image/back 1.jpg" alt="Banner" class="banner-image">
+            
+            <img src="<%= request.getContextPath() %>/image/back.jpg" alt="Banner" class="banner-image">
+            <img src="<%= request.getContextPath() %>/image/bac 2.jpg" alt="Banner" class="banner-image">
             <div class="banner-text">
                 <h1>Welcome to ASHISH COMPUTER INSTITUTE & LIBRARY</h1>
                 <p>MY INSTITUTE PROVIDES THE BEST EDUCATION IN INFORMATION TECHNOLOGY</p>
@@ -118,17 +119,17 @@
     	<div class="carousel-container">
         <div class="carousel">
             <div class="carousel-item">
-                <img src="<%= request.getContextPath() %>/image/banner 1.1.jpg" style="width: 400px; height: 150px;" alt="ADCA">
-                <h3>NIELIT COURSES</h3>
-                <p>National Institute of Electronics and Information Technology</p>
+                <img src="<%= request.getContextPath() %>/image/adca.jpg" style="width: 250px; height: 300px;" alt="ADCA">
+                <h3>ADCA</h3>
+                <p>Advance Diploma In Computer Aplication</p>
             </div>
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/400x150" alt="Short Term Courses">
-                <h3>SHORT TERM COURSES</h3>
-                <p>Best Computer Courses for Students</p>
+                 <img src="<%= request.getContextPath() %>/image/dca.jpg" style="width: 250px; height: 300px;" alt="DCA">
+                <h3>DCA</h3>
+                <p>Diploma In Computer Application</p>
             </div>
             <div class="carousel-item">
-                <img src="https://via.placeholder.com/400x150" alt="Tally Courses">
+               <img src="<%= request.getContextPath() %>/image/tally.jpg" style="width: 250px; height: 300px;" alt="TALLY ">
                 <h3>TALLY COURSE</h3>
                 <p>Tally ERP with GST - Basic to Advanced</p>
             </div>
@@ -138,7 +139,7 @@
     
     <div class="enquiry-form-container">
     <h2>Enquiry Form</h2>
-    <form action="submitEnquiry.jsp" method="post">
+    <form action="enquary" method="post">
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -153,6 +154,12 @@
 
         <button type="submit">Submit</button>
     </form>
+    <div id="result">
+        <!-- Success or failure message will be shown here -->
+        <h3>
+            <%= request.getAttribute("resultMessage") != null ? request.getAttribute("resultMessage") : "" %>
+        </h3>
+    </div>
     
     </div>
     <div class="container">
